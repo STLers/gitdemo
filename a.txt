@@ -4,4 +4,4 @@ qaweqwe
 q2
 qweqwe
 zxc
-add new
+del old
