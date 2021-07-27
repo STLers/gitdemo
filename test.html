@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <script src='./Promise.js'></script>
     <script>
-        console.log(1)
+        var p = new Promise((resolve, reject) => {
+            // resolve(1)
+            reject(1)
+        })
+        p.then(value => console.log("resolved" + value), reason => console.log("rejected" + reason))
+        p.then(value => console.log("resolved" + value), reason => console.log("rejected" + reason))
     </script>
 </body>
 </html>
