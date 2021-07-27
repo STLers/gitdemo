@@ -21,6 +21,16 @@
         var str = JSON.stringify(obj)
         var json = JSON.parse(str)
         console.log(typeof str, typeof json)
+        console.log(this === window ? "browser" : "node")
+        var arr = ["1", "2"]
+        var arrstr = arr.join()
+        var arrrevert = arrstr.split()
+        console.log(typeof arrstr, arrrevert)
+        var len = new Array(3)
+        console.log(len.length)
+        var len2 = [],
+            len3 = new Array()
+        console.log(len2.length, len3.length)
     </script>
 </body>
 
