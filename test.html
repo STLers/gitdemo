@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrap{
+            display: table;
+            width: 100%;
+        }
+        .left{
+            /* width: 100px; */
+            display: table-cell;
+            background-color: black;
+            height: 100px;
+        }
+        .right {
+            width: 100px;
+            margin-left: 100px;
+            display: table-cell;
+            background-color: red;
+            /* height: 200px; */
+        }
+    </style>
 </head>
 <body>
+    <div class="wrap">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
     <script src='./Promise.js'></script>
     <script>
         var p = new Promise((resolve, reject) => {
