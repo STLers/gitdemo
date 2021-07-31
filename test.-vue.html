@@ -11,6 +11,7 @@
     <script src="./vue-plugin.js"></script>
     <script>
         Vue.use(MyPlugin)
+        Vue.directive('my-directive', function(el, bind){})
         new Vue({
             el: "#app",
             data: {
